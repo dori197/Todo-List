@@ -5,7 +5,7 @@
 }
 
 body{
-    background: linear-gradient(to right, #274046, #e6dada);
+    background: linear-gradient(to right, #ffa17f, #00223e);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@ body{
 }
 
 .content{
-    background-color: rgb(255, 245, 222);
+    background-color: rgb(237, 234, 223);
     width: 100%;
     max-width: 600px;
     border-radius: 50px;
@@ -23,7 +23,7 @@ body{
 }
 
 header{
-    background: linear-gradient(to right, #c1b6b6,#729fa9 );
+    background: linear-gradient(to right, #00223ebf, #ffa17fb8);
     padding: 20px;
     color: #fff;
 }
@@ -45,7 +45,7 @@ input[type ="text"]{
     background: linear-gradient(to right, #ffffffd6,#6b6d6d82 );
 }
 .input-section{
-    display: flex;
+    display: flex;  
     gap: 10px;
 }
 
@@ -56,7 +56,7 @@ input[type ="text"]{
     outline: none;
     cursor:pointer;
     color: #fff;
-    background-color: #32bfcc;
+    background: linear-gradient(to right, #ffb26ed6,#301e1782 );
     font-weight: bold;
 }
 
@@ -101,4 +101,9 @@ input[type ="text"]{
 .todo-act:hover{
     transform: scale(1.05);
     transition: all 0.5s ease;
+}
+
+input[type ="checkbox"]{
+    height: 30%;
+    box-shadow: rgba(50, 50, 93, 0.137) 0px 15px 30px -6px inset, rgba(0, 0, 0, 0.16) 0px 9px 18px -9px inset;
 }
