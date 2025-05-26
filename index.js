@@ -100,8 +100,8 @@ function handleDelete(id) {
   console.log(id);
   const swalWithBootstrapButtons = Swal.mixin({
     customClass: {
-      confirmButton: "btn btn-success",
-      cancelButton: "btn btn-danger mr-3",
+      confirmButton: "btn btn-primary",
+      cancelButton: "btn btn-danger me-3",
     },
     buttonsStyling: false,
   });

@@ -5,7 +5,10 @@
 }
 
 body{
-    background: linear-gradient(to right, #ffa17f, #00223e);
+    background: url(./background\ for\ todo-list.gif);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,16 +17,17 @@ body{
 }
 
 .content{
-    background-color: rgb(237, 234, 223);
+    background: linear-gradient(to right, #ffd4d4a2, #ffa36e95, #ffd4d4a2);    
     width: 100%;
     max-width: 600px;
     border-radius: 50px;
     overflow: hidden;
+    border: 3px solid rgb(255, 140, 159);
     border-radius: 10px;
 }
 
 header{
-    background: linear-gradient(to right, #00223ebf, #ffa17fb8);
+    background: linear-gradient(to right, #7d90ff5f);
     padding: 20px;
     color: #fff;
 }
@@ -32,17 +36,32 @@ header h1{
     margin-bottom: 15px;
     font-size: 40px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    background: linear-gradient(to right, #ff3142, #ffa36ed4, #fdb34cd2);
+    background-clip: text;
+    color: transparent;
     font-weight: 900;
+    background-size: 150% auto;
+    animation: text-anima 4s infinite linear;
+}
+@keyframes text-anima {
+    0%{ background-position: 0% 50%; }
+    25%{ background-position: 50% 50%; }
+    50%{ background-position: 100% 50%; }
+    75%{ background-position: 50% 50%; }
+    100%{ background-position: 0% 50%; }
 }
 
-input[type ="text"]{
+    input[type ="text"]{
     flex: 1;
     padding: 10px 12px;
     border-radius: 20px;
     border: none;
     outline: none;
     font-size: 16px;
-    background: linear-gradient(to right, #ffffffd6,#6b6d6d82 );
+    color: #ff6450;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    background: linear-gradient(to right, #ffffffd6,#ffb07482 );
 }
 .input-section{
     display: flex;  
@@ -56,7 +75,7 @@ input[type ="text"]{
     outline: none;
     cursor:pointer;
     color: #fff;
-    background: linear-gradient(to right, #ffb26ed6,#301e1782 );
+    background: linear-gradient(to right,  rgba(255, 130, 151, 0.516), rgba(255, 185, 93, 0.589));
     font-weight: bold;
 }
 
@@ -77,16 +96,19 @@ input[type ="text"]{
     align-items: center;
     margin-bottom: 20px;
     padding: 5px;
-    background-color: #ffffff63;
+    background: linear-gradient(to right, rgba(255, 122, 122, 0.648), rgba(255, 175, 137, 0.516), rgba(255, 122, 122, 0.648));
     margin: 10px;
+    border-radius: 10px;
 }
 .todo-item:hover{
     transform: scale(1.04);
-    background-color: #ffffff58;
+    background-color: #ffffff76;
     transition: all 0.5s ease;
 }
 .todo-cont{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -103,7 +125,31 @@ input[type ="text"]{
     transition: all 0.5s ease;
 }
 
-input[type ="checkbox"]{
-    height: 30%;
-    box-shadow: rgba(50, 50, 93, 0.137) 0px 15px 30px -6px inset, rgba(0, 0, 0, 0.16) 0px 9px 18px -9px inset;
+button:hover{
+    color: #ff3647;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
 }
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    border: 2px solid black;
+    appearance: none;
+    background: rgb(206, 206, 206);
+    cursor: pointer;
+    position: relative;
+}
+input[type="checkbox"]:checked::after {
+    content: "✔";
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff6955;
+    border-radius: 50%;
+    position: absolute;
+}
+
