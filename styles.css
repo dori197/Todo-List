@@ -27,7 +27,10 @@ body{
 }
 
 header{
-    background: linear-gradient(to right, #7d90ff5f);
+    background: url(./background\ for\ todo-list\ top.gif);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     padding: 20px;
     color: #fff;
 }
@@ -36,7 +39,7 @@ header h1{
     margin-bottom: 15px;
     font-size: 40px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    background: linear-gradient(to right, #ff3142, #ffa36ed4, #fdb34cd2);
+    background: linear-gradient(to right, #ff2234, rgb(152, 152, 255), #ff9254d4, rgb(152, 152, 255), #c78d3bd2);
     background-clip: text;
     color: transparent;
     font-weight: 900;
@@ -61,7 +64,7 @@ header h1{
     color: #ff6450;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 900;
-    background: linear-gradient(to right, #ffffffd6,#ffb07482 );
+    background: linear-gradient(to right, #ffffffd6,#ffb074b5 );
 }
 .input-section{
     display: flex;  
@@ -75,8 +78,12 @@ header h1{
     outline: none;
     cursor:pointer;
     color: #fff;
-    background: linear-gradient(to right,  rgba(255, 130, 151, 0.516), rgba(255, 185, 93, 0.589));
+    background: linear-gradient(to right,  rgba(255, 81, 110, 0.842), rgba(255, 180, 81, 0.829));
+    border: 2px solid salmon;
     font-weight: bold;
+}
+.input-section button:hover{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .todo-content{
@@ -103,6 +110,7 @@ header h1{
 .todo-item:hover{
     transform: scale(1.04);
     background-color: #ffffff76;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     transition: all 0.5s ease;
 }
 .todo-cont{
